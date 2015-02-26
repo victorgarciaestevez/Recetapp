@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:NuevaInstruccionDialog title="Nueva Intrucción para ''"
+	modal="true" xmlns:bxml="http://pivot.apache.org/bxml"
+	xmlns:content="org.apache.pivot.wtk.content" xmlns:ui="dad.recetapp.ui"
+	xmlns="org.apache.pivot.wtk">
+
+	
+		
+			<TablePane>
+				<columns>
+					<TablePane.Column width="1*" />
+				</columns>
+
+				<TablePane.Row height="-1">
+					<TablePane>
+						<columns>
+							<TablePane.Column width="-1" />
+							<TablePane.Column width="1*" />
+						</columns>
+						<TablePane.Row height="-1">
+							<Label text="Orden:" styles="{font:{bold:true}}" />
+							<TextInput bxml:id="ordenText"></TextInput>
+						</TablePane.Row>
+						<TablePane.Row>
+							<Label text="    " styles="{verticalAlignment:'center'}" />
+						</TablePane.Row>
+						<TablePane.Row height="-1">
+							<Label text="Descripción:" styles="{font:{bold:true}}" />
+							<Border>
+							<TextArea bxml:id="descripcionText" minimumHeight="80"></TextArea>
+							</Border>
+						</TablePane.Row>
+					</TablePane>
+				</TablePane.Row>
+				<TablePane.Row>
+					<Label text="    " styles="{verticalAlignment:'center'}" />
+				</TablePane.Row>
+				<TablePane.Row height="1*">
+					<BoxPane styles="{horizontalAlignment:'right', verticalAlignment:'bottom'}">
+						<PushButton bxml:id="anadirButton" buttonData="Añadir" />
+						<PushButton bxml:id="cancelarButton" buttonData="Cancelar" />
+					</BoxPane>
+				</TablePane.Row>
+			</TablePane>
+		
+	
+</ui:NuevaInstruccionDialog>

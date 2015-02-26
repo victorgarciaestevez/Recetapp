@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:EditarIngredienteDialog title="Editar ingrediente" modal="true"
+	xmlns:bxml="http://pivot.apache.org/bxml" xmlns:content="org.apache.pivot.wtk.content"
+	xmlns:ui="dad.recetapp.ui" xmlns="org.apache.pivot.wtk">
+	
+	
+		<TablePane styles="{padding:8, horizontalSpacing:6}">
+				<columns>
+					<TablePane.Column width="-1"/>
+					<TablePane.Column width="2*" />
+				</columns>
+				<TablePane.Row height="-1">
+								<Label text="Cantidad: " styles="{verticalAlignment:'center'}" />
+								<TextInput bxml:id="cantidadtxt"></TextInput>
+				</TablePane.Row>
+				<TablePane.Row>
+					<Label text="    " styles="{verticalAlignment:'center'}" />
+				</TablePane.Row>
+				<TablePane.Row height="-1">
+								<Label text="   Medida: " styles="{verticalAlignment:'center'}" />
+								<ListButton bxml:id="comboMedida" />
+				</TablePane.Row>
+				<TablePane.Row>
+					<Label text="    " styles="{verticalAlignment:'center'}" />
+				</TablePane.Row>
+				<TablePane.Row height="-2">			
+								<Label text="       Tipo: " styles="{verticalAlignment:'center'}" />
+								<ListButton bxml:id="comboIngrediente" />
+				</TablePane.Row>
+				<TablePane.Row height="-1">
+					<Label text="    " styles="{verticalAlignment:'center'}" />
+				</TablePane.Row>
+				<TablePane.Row>
+					<BoxPane></BoxPane>
+					<BoxPane orientation="horizontal" styles="{horizontalAlignment: 'right', padding:8}">
+						<PushButton bxml:id="guardarCambiosIngrediente" buttonData="Guardar cambios" />
+						<PushButton bxml:id="cancelarEIngrediente" buttonData="Cancelar" />
+					</BoxPane>
+				</TablePane.Row>
+		</TablePane>
+			
+	
+</ui:EditarIngredienteDialog>
